@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(0, 0%, 8%);
+}
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    padding: 2rem;
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 12%);
+}
+.profile-photo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url('./images/avatar-jessica.jpeg');
+    background-size: cover;
+}
+.name h2{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin-top: 2.5rem;
+    color: hsl(0, 0%, 100%);
+}
+.address h4{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin-top: 0.7rem;
+    color: hsl(75, 94%, 57%);
+}
+.quote p{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+.btn{
+    display: block;
+    margin-top: 0.6rem;
+}
+.button{
+    display: block;
+    width: 300px;
+    height: 50px;
+    border-radius:8px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    font-weight: 600;
+    margin-top: 1.2rem;
+}
+@media  (max-width : 500px) {
+    .button{
+        width: 250px;
+        height: 40px;
+        margin-top: 0.8rem;
+    }
+    .quote p {
+        font-size: 12px;
+        margin-top: 1.5rem;
+    }
+}
